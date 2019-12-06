@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="selectAPlayer.css">
+    <title></title>
+  </head>
+  <body>
+
+    <h1> Select a Player </h1>
+
+  <main class="flexcontainer">
+     <li class="playerBox"></li>
+     <li class="playerBox2"></li>
+     <li class="playerBox3"></li>
+  </main>
+
+  <div class="flexcontainer2">
+   <button onclick="wrongChoice()"> Pick me! </button>
+   <a class="button2" href="p2.html">  No, me! </a>
+   <button onclick="wrongChoice()"> Over here! Pick me! </button>
+
+
+  </div>
+
+  <p id="demo"></p>
+
+  <script>
+  function wrongChoice() {
+  var txt;
+  if (confirm("Try again!\nHint: Who is this coding school for?")) {
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+ </script>
+  </body>
+</html>
